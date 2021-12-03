@@ -11,5 +11,15 @@ namespace OtilioFinal.Models
         [Key]
         public int id { get; set; }
         private string name { get; set; }
+
+        public ICollection<Seller> Sellers { get; set; }
+
+        public void AddSeller(Seller seller) {
+
+        }
+
+        public double TotalSales(DateTime initial, DateTime final) {
+            return 0.0;
+        }
     }
 }

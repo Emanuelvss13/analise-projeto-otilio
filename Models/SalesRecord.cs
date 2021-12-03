@@ -16,5 +16,7 @@ namespace OtilioFinal.Models
         private double amount { get; set; }
 
         private SaleRecordStatus status { get; set; }
+
+        public virtual Seller Seller { get; set; }
     }
 }

@@ -33,7 +33,7 @@
                 <span asp-validation-for="baseSalary" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" asp-controller="SellerController" asp-action="Create" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>

@@ -14,5 +14,23 @@ namespace OtilioFinal.Models
         public string email { get; set; }
         public DateTime birthDate { get; set; }
         public double baseSalary { get; set; }
+
+        
+        public virtual ICollection<SalesRecord> Sales { get; set; }
+
+        public virtual Departament Department { get; set; }
+
+        public void AddSales(SalesRecord salesRecord) {
+
+        }
+
+        public void RemoveSales(SalesRecord salesRecord) {
+            
+        }
+
+        public double TotalSales(DateTime initial, DateTime final) {
+
+            return 0.0;
+        }
     }
 }
